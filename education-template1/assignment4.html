@@ -18,12 +18,21 @@
                 background-size: cover;
             }
 
+            .overlay
+            {
+                background-color: black;
+                width:100%;
+                height:100%;
+                opacity: 0.4;
+            }
+
             .title-bar
             {
                 background-color: #002046;
                 width:1350px;
                 height:100px;
-                margin: 0 auto;
+                margin: -700px auto;
+                position: relative;
             }
 
             .title
@@ -32,7 +41,7 @@
                 margin: 0 0 0 15px !important;
             }
 
-            i
+            .title-bar i
             {
                
                 background-color: #FBC508;
@@ -87,7 +96,8 @@
                 top: 50%;
                 position: absolute;
                 transform: translate(-50%, -50%);
-                margin-top: -120px;
+                margin-top: 550px;
+                margin-left: 120px;
             }
 
             .mid-content2
@@ -100,12 +110,12 @@
                 top: 50%;
                 position: absolute;
                 transform: translate(-50%, -50%);
-                margin-top: -20px;
+                margin-top: 650px;
+                margin-left: 120px;
             }
 
             .parent-mid
             {
-                
                 height:600px;
                 width: 1350px;
                 position:relative;
@@ -128,29 +138,86 @@
                 top: 50%;
                 position: absolute;
                 transform: translate(-50%, -50%);
-                margin-top: 30px;
+                margin-top: 700px;
+                margin-left: 80px;
             }
 
             .box
             {
-                width: 400px;
-                height: 200px;
+                width: 360px;
+                height: 170px;
                 background-color:#002046 ;
                 float: left;
-                margin:0 0 0 5px;
                 opacity: 0.8;
+                padding:45px 0 45px 30px;
+                margin-top:530px;
+                margin-right:5px;
             }
 
-            .b1
+            .box-icon i
             {
-                margin-left: 70px;
+                color:#FBC508;
+                font-size: 30px;
+                margin-left: 80px;
+                margin-top:10px;
             }
 
-            .box-container
+            .box-heading
             {
-                align-content: center;
-                margin: -200px auto;
-                width: 1350px;
+                color: white;
+                font-weight: 5px;
+                margin-bottom:15px;
+                font-size: 20px;
+                float: left;
+            }
+
+            .box-content
+            {
+                color:white;
+                width:260px;
+            }
+
+            .remove-float
+            {
+                clear: both;
+            }
+            
+            .second-half
+            {
+                width:1350px;
+                height:700px;
+                margin: 0 auto;
+                text-align:center;
+                
+            }
+
+            .second-half-header
+            {
+                color:#002046;
+                font-size: 60px;
+                position: absolute;
+                margin-top: 80px;
+                margin-left: 370px;
+            }
+
+            .second-half-text
+            {
+                color:black;
+                position: absolute;
+                margin-top:200px;
+                margin-left: 300px;
+                width:750px;
+            }
+
+            .second-half-img
+            {
+                background-image: url("images2/collage-young-students-on-white-260nw-1576756951.jpg");
+                background-size: cover;
+                width:1200px;
+                height: 400px;
+                position: absolute;
+                margin-top: 260px;
+                margin-left: 130px;
             }
         </style>
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -158,57 +225,103 @@
     <body>
 
             <div class="first-half">
-                <div class="title-bar">
-                    <i class="glyphicon glyphicon-education"></i>
-                    <div class="menu">
-                        <span class="title">ACADEMICS</span>
-                        <span class="active">HOME</span>
-                        <span>PAGES</span>
-                        <span>COURSES</span>
-                        <span>RESEARCH</span>
-                        <span>NEWS</span>
-                        <span>GALLERY</span>
-                        <span>CONTACT</span>
-                        <span class="applynow"><a href="#">APPLY NOW</a></span>
-                    </div>
-                </div>
+                <div class="overlay"></div>
+            </div>
 
-                <div class="parent-mid">
-                    
-                        <div class="mid-content1">
-                            <span style="color:white">Best Education for Design</span>
+            <div class="title-bar">
+                <i class="glyphicon glyphicon-education"></i>
+                <div class="menu">
+                    <span class="title">ACADEMICS</span>
+                    <span class="active">HOME</span>
+                    <span>PAGES</span>
+                    <span>COURSES</span>
+                    <span>RESEARCH</span>
+                    <span>NEWS</span>
+                    <span>GALLERY</span>
+                    <span>CONTACT</span>
+                    <span class="applynow"><a href="#">APPLY NOW</a></span>
+                </div>
+            </div>
+
+            <div class="parent-mid">
+                
+                    <div class="mid-content1">
+                        <span style="color:white">Best Education for Design</span>
+                    </div>
+    
+                    <div class="mid-content2">
+                        <span style="color:white">
+                            Empty dummy text for the printing and typesetting industry
+                            orem ipsum has been the industry's standard dummy text ever since 
+                            printing and typesetting industry.
+                        </span>
+                    </div>
+                        
+                    <div class="btn2">
+                        <a href="#">START A COURSE</a>
+                    </div>
+                <!-- <div class="arrow-pointer"><i class="glyphicon glyphicon-menu-left"></i></div>
+                <div class="arrow-pointer"><i class="glyphicon glyphicon-menu-right"></i></div> -->
+            </div>
+
+                    <div class="box b1">
+                        <div class="box-heading">
+                            <span>Scholarship Facility</span>
                         </div>
-        
-                        <div class="mid-content2">
-                            <span style="color:white">
-                                Empty dummy text for the printing and typesetting industry
-                                orem ipsum has been the industry's standard dummy text ever since 
-                                printing and typesetting industry.
+
+                        <div class="box-icon">
+                            <i class="glyphicon glyphicon-education"></i>
+                        </div>
+                        <div class="remove-float"></div>
+                        <div class="box-content">
+                            <span>Empty dummy text printing press ypese tting industry</span>
+                        </div>
+                    </div>
+            
+                    <div class="box b2" >
+                        <div class="box-heading" style="width:180px !important;">
+                            <span >Skilled lecturers</span>
+                        </div>
+
+                        <div class="box-icon">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </div>
+                        <div class="remove-float"></div>
+                        <div class="box-content">
+                            <span>Empty dummy text printing press ypese tting industry</span>
+                        </div>
+                    </div>
+            
+                    <div class="box b3">
+                        <div class="box-heading">
+                            <span>Book Library & Store</span>
+                        </div>
+
+                        <div class="box-icon">
+                            <i class="glyphicon glyphicon-book" style="transform:rotate(30deg);"></i>
+                        </div>
+                        <div class="remove-float"></div>
+                        <div class="box-content">
+                            <span>Empty dummy text printing press ypese tting industry</span>
+                        </div>
+                    </div>
+                    <div class="remove-float"></div>
+
+                    <div class="second-half">
+                        <div class="second-half-header">
+                            <span>
+                                Welcome To Academics
                             </span>
                         </div>
-                            
-                        <div class="btn2">
-                            <a href="#">START A COURSE</a>
+                        <div class="second-half-text">
+                            <span style="text-align: center;">
+                                Tmply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took.
+                            </span>
                         </div>
-                    <!-- <div class="arrow-pointer"><i class="glyphicon glyphicon-menu-left"></i></div>
-                    <div class="arrow-pointer"><i class="glyphicon glyphicon-menu-right"></i></div> -->
-                </div>
-            </div>
-            <div class="box-container">
-                    <div class="box b1">
-                        
-                </div>
-            
-                <div class="box">
-                        
-                </div>
-            
-                <div class="box">
-                        
-                </div>
-            </div>
-            
+                        <div class="second-half-img">
 
-           
+                        </div>
+                    </div>
     </body>
 </html>
