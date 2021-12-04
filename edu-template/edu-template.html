@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Assignment 5</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <style>
+
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                width: 1350px;
+                margin:0 auto;
+            }
+
+            .contact-bar-container
+            {
+                background-color: #2a80b9;
+                height: 40px;
+                color:white;
+                display: flex;
+                orientation: landscape;
+                padding:10px;
+            }
+
+            .phone-num
+            {
+                position: relative;
+                right: -100px;
+            }
+
+            .vertical-divide
+            {
+                width: 2px;
+                background-color: white;
+                height:20px;
+                margin: 0 20px 0 20px;
+                border-radius: 10%;
+                position: relative;
+                right: -100px;
+            }
+
+            .email
+            {
+                position: relative;
+                right: -100px;
+            }
+
+            .time
+            {
+                position: relative;
+                right: -100px;
+            }
+
+            .login-btn
+            {
+                background-color: white;
+                color: black !important;
+                position: relative;
+                right: -85ex;
+                padding:5px 8px 20px 8px;
+                border-radius: 5%;
+                text-align: center;
+                height:20%;
+                width:100px;
+                margin-top: -5px;
+            }
+
+            .header-container
+            {
+                height: 80px;
+                background-color: white;
+                display: flex;
+                orientation: landscape;
+                padding-top: 9px;
+                padding-bottom: 10px;
+                margin: 0 auto;
+            }
+
+            .header-icon
+            {
+                position: relative;
+                right: -100px;
+            }
+
+            .site-name
+            {
+                position: relative;
+                right: -130px;
+                font-weight: bolder;
+                font-size: 30px;
+                margin-top: 8px;
+            }
+
+            .menu
+            {
+                color:black;
+                font-weight:bold;
+                font-size: 15px;
+                padding: 13px 5px 0 5px;
+                position: relative;
+                right: -400px;
+                text-align: center;
+                margin-right: 40px;
+                margin-bottom: 5px;
+                margin-top: 8px;
+            }
+
+            .home
+            {
+                background-color:#2781b6;
+                color:white;
+                width: 100px;
+                border-radius: 10px;
+            }
+
+            .icons
+            {
+                color:white ;
+                font-size: 12px;
+                position: relative;
+                right: -90px;
+            }
+
+            /** the second section styling starts here **/
+
+            .content-container
+            {
+                width:1350px;
+                height: 600px;
+                background-image: url("images2/smiling-student2.jpg");
+                background-size: cover;
+            }
+
+            .image-dimmer
+            {
+                background-color: black;
+                width: 1350px;
+                height: 600px;
+                position:absolute;
+                opacity: 0.5;
+            }
+
+            .subtitle
+            {
+                color: white;
+                font-weight: bold;
+                font-size: 13px;
+                position: absolute;
+                margin-left: 120px;
+                margin-top: 200px;
+            }
+
+            .under-subtitle
+            {
+                position: absolute;
+                color: white;
+                margin-left: 120px;
+                margin-top: 215px;
+                font-weight: bolder;
+                font-size: xx-large;
+            }
+
+            .collection-color
+            {
+                color: #2786C1;
+            }
+
+            .text
+            {
+                color: white;
+                position: absolute;
+                margin-left: 120px;
+                margin-top: 280px;
+                width:450px;
+            }
+
+            .subtitles
+            {
+                display: flex;
+                orientation: landscape;
+                position: absolute;
+                margin:350px 100px 0 0;
+            }
+
+            .sub
+            {
+                color: white;
+                font-weight: bold;
+                margin-left: 120px;
+            }
+
+            .input-container
+            {
+                margin:380px 0 0 118px;
+                position: absolute;
+                display: flex;
+                orientation: horizontal;
+                
+            }
+
+            .inputs-box
+            {
+                position: relative;
+                background-color: white;
+                width:190px;
+                height: 40px;
+                margin-right:10px;
+            }
+
+            .input
+            {
+                color:black;
+                width:150px;
+                position:absolute;
+                margin-top:10px;
+                margin-left:20px;
+                border:none;
+            }
+
+            .input:active
+            {
+                border: none;
+                outline:none;
+            }
+            .input-icons
+            {
+                position: relative;
+                right:-15px;
+                top:10px;
+            }
+
+            .footer-container
+            {
+                background-color: #2A80B9;
+                margin: 0 auto;
+                width:1350px;
+                height: 150px;
+                orientation: landscape;
+                position: relative;
+            }
+
+            .footer-icon
+            {
+                background-color: white; 
+                width:70px; 
+                height:70px;
+                border-radius:10px;
+                position: absolute;
+                margin: 40px 60px 0 100px;
+                text-align: center;
+            }
+
+            h1
+            {
+                color: white;
+                position: absolute;
+                margin-left: 180px;
+                margin-top:50px;
+            }
+
+            p
+            {
+                color:white;
+                position: absolute;
+                margin-left: 180px;
+                margin-top:85px;
+            }
+        </style>
+        <body>
+            
+                <div class="contact-bar-container">
+                    <div class="phone-icon"><i class="glyphicon glyphicon-earphone icons"></i></div>
+                    <div class="phone-num"><span>123-456-789</span></div>
+                    <div class="vertical-divide"></div>
+                    <div class="email-icon"><i class="glyphicon glyphicon-envelope icons"></i></div>
+                    <div class="email"><span>contact@yourdomain.com</span></div>
+                    <div class="vertical-divide"></div>
+                    <div class="clock-icon"><i class="glyphicon glyphicon-time icons"></i></div>
+                    <div class="time">opening time +08:00</div>
+                    <div class="login-btn"><i class="fa fa-unlock-alt icons" style="color:black; right: 10px;"></i><span><strong>Login</strong></span></div>
+                </div>
+
+                <div class="header-container">
+                    <div class="header-icon"><i class="fa fa-industry icons" style="color:#2a80b9; right: -20px; font-size: 40px;";></i></div>
+                    <div class="site-name"><span><stong>Edu<span style="color:#2a80b9">line</span></stong></span></div>
+                    <div class="menu home"><span>HOME</span></div>
+                    <div class="menu"><span>PAGES</span></div>
+                    <div class="menu"><span>COURSES</span></div>
+                    <div class="menu"><span>EVENTS</span></div>
+                    <div class="menu"><span>BLOGS</span></div>
+                    <div class="menu"><span>CONTACT</span></div>
+                </div>
+
+                <div class="content-container">
+                    <div class="image-dimmer"></div>
+                    <div class="subtitle"><span>ACCELERATE YOUR FUTURE</span></div>
+                    <div class="under-subtitle"><span>Curated Course <span class="collection-color">Collections</span></span></div>
+                    <div class="text">
+                        <span>
+                            Our mission is to empower clients, colleagues, and communities
+                            to achieve aspirations while building lasting, caring relationships.
+                        </span>
+                    </div>
+                    
+                    <div class="subtitles">
+                        <div class="sub"><span>CATEGORY</span></div>
+                        <div class="sub"><span>INSTRUCTOR</span></div>
+                        <div class="sub"><span>PRICE</span></div>
+                    </div>
+                    <div class="input-container">
+                        <div class="inputs-box">
+                            <span>
+                                <i class="glyphicon glyphicon-folder-open icons input-icons" style="color:#3384BF; margin-left:-10px;"></i>
+                            </span>
+                            <select class="input">
+                                <option value="fiat" selected>Choose Category</option>
+                            </select>
+                        </div>
+
+                        <div class="inputs-box">
+                            <span>
+                                <i class="glyphicon glyphicon-user icons input-icons" style="color:#3384BF; margin-left:-10px;"></i>
+                            </span>
+                            <select class="input">
+                                <option value="fiat" selected>Choose Instructor</option>
+                            </select>
+                        </div>
+
+                        <div class="inputs-box">
+                            <span> 
+                                <i class="glyphicon glyphicon-pencil icons input-icons" style="color:#3384BF; margin-left:-10px;"></i>
+                            </span>
+                            <select class="input">
+                                <option value="fiat" selected>Choose Price</option>
+                            </select>
+                        </div>
+
+                        <div class="inputs-box">
+                            <input type="search" placeholder="SEARCH" class="input">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-container">
+                    <div class="footer-icon">
+                        <div style="height:20px;"></div>
+                        <i class="fas fa-university" style="color:#3384BF; font-size: 30px; "></i>
+                    </div>
+                    <div style="margin-left:10px;">
+                        <h1>80k+</h1>
+                        <p>Active courses</p>
+                    </div>
+                    <div></div>
+
+                    <div class="footer-icon" style="margin-left:400px !important;">
+                        <div style="height:20px;"></div>
+                        <i class="fas fa-graduation-cap" style="color:#3384BF; font-size: 30px; "></i>
+                    </div>
+                    <div style="margin-left:10px;">
+                        <h1 style="margin-left:480px;">33k+</h1>
+                        <p style="margin-left:480px;">Active students</p>
+                    </div>
+                    <div></div>
+
+                    <div class="footer-icon" style="margin-left:700px !important;">
+                        <div style="height:20px;"></div>
+                        <i class="fas fa-video" style="color:#3384BF; font-size: 30px; "></i>
+                    </div>
+                    <div style="margin-left:10px;">
+                        <h1 style="margin-left:780px;">278k+</h1>
+                        <p style="margin-left:780px;">Video courses</p>
+                    </div>
+                    <div></div>
+
+                    <div class="footer-icon" style="margin-left:1000px !important;">
+                        <div style="height:20px;"></div>
+                        <i class="fas fa-university" style="color:#3384BF; font-size: 30px;"></i>
+                    </div>
+                    <div style="margin-left:10px;">
+                        <h1 style="margin-left:1080px;">80k+</h1>
+                        <p style="margin-left:1080px;">Active courses</p>
+                    </div>
+                    <div></div>
+                </div>
+            
+        </body>
+    </head>
+</html>
