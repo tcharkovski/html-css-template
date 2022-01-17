@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+<body>
+    <div class="container">
+        <div class="sub-title1"><h3>Order Identification</h3></div>
+        <div class="order_identification">
+            <table class="order_id_table">
+                <form>
+                    <tr>
+                        <td>Receipt #:</td>
+                        <td><input type="text" size="5"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Customer Name</td>
+                        <td><input type="text" size="20"></td>
+                        <td>Customer Phone</td>
+                        <td><input type="text" size="11"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Date Left</td>
+                        <td><input type="date"></td>
+                        <td>Time Left</td>
+                        <td><input type="time"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Date Expected</td>
+                        <td><input type="date" id="date"></td>
+                        <td>Time Expected</td>
+                        <td><input type="time" id="time"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Order Status</td>
+                        <td>
+                            <select name="order_status">
+                                <option value="pending" id="pending">Pending</option>
+                                <option value="processing" id="processing">Processing</option>
+                                <option value="shipped" id="shipped">Shipped</option>
+                                <option value="delivered">Delivered</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Date Picked Up</td>
+                        <td><input type="date"></td>
+                        <td>Time Picked up</td>
+                        <td><input type="time"></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        
+        <div class="sub-title2"><h3>Order Processing</h3></div>
+        <div class="order_processing">
+            <table class="order_processing_table">
+                <form>
+                    <tr>
+                        <td>Item Type</td>
+                        <td>Unit Price</td>
+                        <td>Qty</td>
+                        <td>Sub-Total</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Shirts</td>
+                        <td><input readonly value="1.25" id="up_shirt" size="6"></td>
+                        <td><input type="text" id="qty_shirt" onkeyup="display()" value="0" size="6"></td>
+                        <td><input readonly id="st_shirt" value="0" size="6"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Pants</td>
+                        <td><input readonly value="1.95" id="up_pants" size="6"></td>
+                        <td><input type="text" id="qty_pants" onkeyup="display()" value="0" size="6"></td>
+                        <td><input readonly id="st_pants" value="0" size="6"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Duvet</td>
+                        <td><input readonly value="3.25" id="up_duvet" size="6"></td>
+                        <td><input type="text" id="qty_duvet" onkeyup="display()" value="0" size="6"></td>
+                        <td><input readonly id="st_duvet" value="0" size="6"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Bed Spread</td>
+                        <td><input readonly value="1.5" id="up_bedSpread" size="6"></td>
+                        <td><input type="text" id="qty_bedSpread" onkeyup="display()" value="0" size="6"></td>
+                        <td><input readonly id="st_bedSpread" value="0" size="6"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Towel</td>
+                        <td><input readonly value="2.25" id="up_towel" size="6"></td>
+                        <td><input type="text" id="qty_towel" onkeyup="display()" value="0" size="6"></td>
+                        <td><input readonly id="st_towel" value="0" size="6"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Native Wear</td>
+                        <td><input readonly value="1.65" id="up_native" size="6"></td>
+                        <td><input type="text" id="qty_native" onkeyup="display()" value="0" size="6"></td>
+                        <td><input readonly id="st_native" value="0" size="6"></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        
+        <div class="sub-title3"><h3>Order Summary</h3></div>
+        <div class="order_summary">
+            <table class="order_summary_table">
+                <form>
+                    <tr>
+                        <td>Cleaning Total</td>
+                        <td><input readonly id="cleaningTotal" size="6" value="0"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Tax Rate</td>
+                        <td><input readonly id="taxRate" size="6" value="10">%</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Tax Amount</td>
+                        <td><input readonly id="taxAmount" size="6" value="0"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Net Price</td>
+                        <td><input readonly id="netPrice" size="6" value="0"></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+</body>
+</html>)

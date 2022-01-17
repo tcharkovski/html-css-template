@@ -1,0 +1,94 @@
+.container
+{
+    background-color: #D4D0C7;
+    width: 1100px;
+    height: 1100px;
+    margin: 0 auto;
+}
+
+.order_identification
+{
+    width:950px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+
+.order_processing
+{
+    width: 550px;
+    height: 450px;
+    border: 1px solid black;
+    position: relative;
+    top:40px;
+    left: 73px;
+    float: left;
+}
+
+.order_summary
+{
+    width: 375px;
+    height: 450px;
+    position: relative;
+    top:-10px;
+    left: 648px;
+    border: 1px solid black;
+}
+
+.sub-title1
+{
+    position: relative;
+    left: 90px;
+    top: 50px;
+}
+
+.sub-title2
+{
+    position: relative;
+    left: 90px;
+    top: 50px;
+}
+
+.sub-title3
+{
+    position: relative;
+    left: 100px;
+    top: 10px;
+}
+
+.order_id_table
+{
+    width:930px;
+    height: 300px;
+    /*border: 1px solid black;*/
+    margin:0 auto;
+}
+
+.order_processing_table
+{
+    width: 530px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.order_summary_table
+{
+    width: 350px;
+    height: 300px;
+    position: relative;
+    top:-400px;
+    margin:0 auto;
+}
+
+td
+{
+    /*border: 1px solid black;*/
+    width: 80px;
+}
+
+input
+{
+    text-align: right;
+}
